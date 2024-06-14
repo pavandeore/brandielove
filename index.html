@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandieLove</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script defer src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <style>
+        /* micro modal */
+        @keyframes mmfadeIn{0%{opacity:0}to{opacity:1}}@keyframes mmfadeOut{0%{opacity:1}to{opacity:0}}@keyframes mmslideIn{0%{transform:translateY(15%)}to{transform:translateY(0)}}@keyframes mmslideOut{0%{transform:translateY(0)}to{transform:translateY(-10%)}}.modal{font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif}.modal__overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.75);display:flex;justify-content:center;align-items:center;z-index:10}.modal__container{background-color:#fff;padding:30px;max-width:640px;height:100%;width:50%;border-radius:4px;overflow-y:auto;box-sizing:border-box}@supports (display:flex){.modal__container{height:initial;max-height:80vh}}.modal__header{position:relative;display:block;height:30px;margin-bottom:20px}@supports (display:flex){.modal__header{display:flex;justify-content:space-between;align-items:center;height:initial;margin-bottom:0}}.modal__title{position:absolute;top:20px;left:20px}.modal__close{position:absolute;top:20px;right:20px;background:0 0;border:0;cursor:pointer;margin:0;padding:0}@supports (display:flex){.modal__close,.modal__title{position:static}}.modal__header .modal__close:before{content:"✕"}.modal__content{margin-top:10px;margin-bottom:10px}@supports (display:flex){.modal__content{margin-top:2rem;line-height:1.5}}.modal__btn{font-size:.875rem;padding:.5rem 1rem;color:rgba(0,0,0,.8);border-radius:.25rem;border-style:none;border-width:0;cursor:pointer;text-transform:none;overflow:visible;line-height:1.15;margin:0;will-change:transform;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateZ(0);transform:translateZ(0);transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.modal__btn-primary{background-color:#00449e;color:#fff}.micromodal-slide{display:none}.micromodal-slide.is-open{display:block}.micromodal-slide[aria-hidden=false] .modal__overlay{animation:mmfadeIn .3s cubic-bezier(0,0,.2,1)}.micromodal-slide[aria-hidden=false] .modal__container{animation:mmslideIn .3s cubic-bezier(0,0,.2,1)}.micromodal-slide[aria-hidden=true] .modal__overlay{animation:mmfadeOut .3s cubic-bezier(0,0,.2,1)}.micromodal-slide[aria-hidden=true] .modal__container{animation:mmslideOut .3s cubic-bezier(0,0,.2,1)}.micromodal-slide .modal__container,.micromodal-slide .modal__overlay{will-change:transform}.modal__container button{outline:0;cursor:pointer!important}.modal__container h2.modal__title{color:#595959}.modal__header{display:flex;justify-content:space-between;align-items:center}.modal__title{margin-top:0;margin-bottom:0;font-weight:600;font-size:1.25rem;line-height:1.25;color:#00449e;box-sizing:border-box}.modal__close{font-size:24px}.modal__content{margin-top:2rem;line-height:1.5;color:rgba(0,0,0,.8)}.modal__btn{padding:10px 15px;background-color:#e6e6e6;border-radius:4px;-webkit-appearance:none}@media only screen and (min-device-width:320px) and (max-device-width:480px){.modal__container{width:90%!important;min-width:90%!important}}
+    </style>
+</head>
+<body>
+
+
+
+
+
+<!-- MODAL --- Micromodal -->
+<div class="modal micromodal-slide" id="key-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="key-modal-title">
+    <header class="modal__header">
+        <p class="modal__title font-semibold text-2xl">
+            <!-- Enter User Access Tocken from HuggingFace -->
+            Since I am using my Own Access Key you can make 10 Request per Day <br/></br/>(use your own key [unlimited chat] coming soon)
+        </p>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+    </header>
+    <!-- <small>This is required to Use the Conversation Model - <a class="text-blue-700 underline" target="_blank" href="https://huggingface.co/settings/tokens"> Get Tocken</a></small>
+    <div class="modal-content-content">
+        <div class="modal__content mb-2">
+            <div class="mt-6">
+                <input autocomplete="off" type="text" id="key" class="flex-1 w-full px-4 py-3 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="User Access Tocken"/>
+
+                <button id="key-submit" class="bg-blue-500 text-white p-2 rounded-lg mt-5 px-4">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div> -->
+    </div>
+</div>
+</div>
+
+
+<div class="modal micromodal-slide" id="about-modal" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+    <header class="modal__header">
+        <p class="modal__title font-semibold text-2xl">
+            This Chat App is Powered by HuggingFace's facebook/blenderbot-400M-distill Model <br/><br/>
+            Only for Fun Purpose. i am not responsible for any kind of misuse of this app. 👀 <br/><br/>
+
+            <small><a class="underline font-normal" href="https://github.com/pavandeore" target="_blank" >about me</a></small>
+        </p>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+    </header>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="flex flex-col h-screen px-5">
+    <div>
+        <div class="container mx-auto">
+            <div class="flex justify-between items-start py-10">
+                <div>
+                    <h1><a href="#" class="text-3xl font-bold text-gray-800">Brandielove</a></h1>
+                    <small>Chat with your <strike>Fake</strike> Real GF ☠️😂</small>
+                </div>
+                <div>
+                    <a data-micromodal-trigger="about-modal" class="text-gray-800 ml-4 cursor-pointer">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto w-full max-w-7xl pl-4 py-4 h-3/4 border border-2 border-gray-300  mb-10">
+        <div id="chatbox" class="w-auto gap-y-10 h-5/6 w-full overflow-y-scroll items-start flex-start flex flex-col relative">
+            <!-- to be added via JS -->
+             <div id="loading" style="display: none;" class="absolute -bottom-5 -left-5">
+                <img src="./loading.gif" alt="loading" height="50" width="100" />
+             </div>
+        </div>
+        <div class="pr-4 mt-5">
+            <div class="flex gap-y-2">
+                <input type="text" id="chatinput" autocomplete="off" class="border border-2 border-gray-300 p-2 flex flex-1 rounded-lg" placeholder="Type your message here" />
+                <button id="sendbutton" class="bg-blue-500 text-white p-2 rounded-lg ml-5 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script defer src="./app.js"></script>
+</body>
+</html>
